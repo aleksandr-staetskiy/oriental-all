@@ -64,3 +64,16 @@ img {
   display: block;
   width: 150px;
 }
+
+.swiper-pagination-bullet {
+    margin-left: 20px;
+}
+.swiper-pagination-bullet-active {
+    color: $color-secondary;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}

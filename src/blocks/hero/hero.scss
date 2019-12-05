@@ -1,0 +1,49 @@
+.hero {
+
+  &__heading {
+    display: block;
+    font-family: 'Gilroy Bold';
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 6.6rem;
+    margin-top: 10rem;
+  }
+
+  &__dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: $color-primary;
+  }
+
+  &__list {
+    margin-top: 60px;
+    font-family: 'Gilroy Light';
+    padding-left: 0;
+    &-item {
+      position: relative;
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+      margin-bottom: 1.6rem;
+      list-style: none;
+      padding-left: 24px;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -5px;
+        width: 2px;
+        height: 24px;
+        background: $color-secondary;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 60px;
+  }
+
+  &__slider {
+    margin-top: 35px;
+  }
+}
