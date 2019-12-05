@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  border: 0 solid transparent;
+  padding: 17px 36px;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 14px;
+  line-height: 17px;
+  &--orange {
+    background: $color-primary;
+  }
+}

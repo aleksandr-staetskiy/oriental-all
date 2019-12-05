@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    line-height: $lineHeight;
+    color: $colorFont;
+    font-weight: $fontRegular;
+}
+
+h1 {
+    margin-bottom: vertical-indent(4);
+    line-height: 40px;
+    font-size: $fontSizeH1;
+    font-weight: $fontSemibold;
+    color: $colorFont;
+}
+
+h2 {
+    font-size: $fontSizeH2;
+    line-height: 32px;
+    font-weight: $fontSemibold;
+    color: $colorFont;
+}
+
+h3 {
+    font-size: $fontSizeH3;
+    line-height: 28px;
+    font-weight: $fontRegular;
+    color: $colorFont;
+}
+
+p {
+
+}
+
+.secondary-text {
+    font-size: $fontSizeSecondary;
+}
+
+a {
+    color: #212F3C;
+    text-decoration: none;
+
+    &:hover {
+        color: #212F3C;
+        text-decoration: none;
+    }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-logo {
+  position: relative;
+  display: block;
+  width: 150px;
+}
