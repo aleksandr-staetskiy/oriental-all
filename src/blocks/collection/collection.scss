@@ -1,0 +1,58 @@
+.collection {
+  font-family: "Gilroy Bold";
+  background: $colorBackground;
+
+  &__heading {
+    display: block;
+    text-align: center;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 54px;
+    padding: 80px 0;
+  }
+  &__card {
+    position: relative;
+    height: 329px;
+    padding: 30px;
+    background: $white;
+
+    &--blue {
+      background: #CEEFFF;
+    }
+
+    &--light {
+      background: #ECF0F6;
+    }
+
+    &--gray {
+      background: #E5E5E5;
+    }
+
+    &-name {
+      color: $black;
+      font-weight: 800;
+      margin-top: 190px;
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+
+    &-product {
+      font-family: "Gilroy Light";
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+    &-img {
+      position: absolute;
+      right: 0;
+      width: 139px;
+      height: 188px;
+      object-fit: contain;
+    }
+
+    &-info {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
