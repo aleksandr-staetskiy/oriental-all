@@ -73,7 +73,18 @@ img {
 }
 
 .swiper-pagination {
+    position: absolute;
+    bottom: 75px;
+    right: 150px;
+    z-index: 99;
     display: flex;
     justify-content: flex-end;
-    margin-left: auto;
+
+    @media (max-width: 576px) {
+        & {
+            bottom: 45px;
+            right: 60px;
+        }
+    }
+
 }

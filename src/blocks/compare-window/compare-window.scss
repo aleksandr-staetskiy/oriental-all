@@ -1,5 +1,5 @@
 .compare-window {
-
+  padding-bottom: 30px;
   &__title {
     font-family: "Gilroy Bold";
     font-weight: 800;
@@ -10,6 +10,10 @@
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 60px;
+  }
+
+  &__img {
+
   }
 
   &__plus {
@@ -24,7 +28,7 @@
     &-head {
       display: block;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 10px;
       line-height: 29px;
       &--headline {
@@ -43,14 +47,74 @@
       height: 36px;
       background: url("../../img/dolgovechnost.png");
       background-repeat: no-repeat;
-
       &--headline {
-
+        width: 66px;
+        height: 66px;
+        background: url("../../img/plus-heading.png");
+        background-size: contain;
+        background-repeat: no-repeat;
       }
     }
 
     &-info {
       margin-left: 20px;
     }
+
   }
+
+  &__minus {
+    color: #FF1D1D;
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      display: flex;
+      margin-top: 32px;
+    }
+
+    &-head {
+      display: block;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+      line-height: 29px;
+    }
+
+    &-descr {
+      display: block;
+    }
+
+    &-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background: url("../../img/minus-1.png");
+      background-repeat: no-repeat;
+      &--headline {
+        width: 66px;
+        height: 66px;
+        background: url("../../img/minus-heading.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &-info {
+      margin-left: 20px;
+    }
+
+  }
+
+  @media only screen and (max-width: 720px) {
+    &__title {
+      font-size: 32px;
+      line-height: 39px;
+    }
+
+    &__img {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+
 }

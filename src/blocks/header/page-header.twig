@@ -45,10 +45,14 @@
       <div class="page-header__bottom">
         <div class="container">
           <div class="row align-items-center">
-        <a href="#" class="page-logo">
-          <img src="../../img/logo.png" alt="лого" />
-        </a>
-       {% include "../../blocks/main-nav/main-nav.twig" %}
+            {# mobile burger #}
+            <button class="burger main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open">
+              <span>Показать главное меню</span>
+            </button>
+          <a href="#" class="page-logo">
+            <img src="../../img/logo.png" alt="лого" />
+          </a>
+         {% include "../../blocks/main-nav/main-nav.twig" %}
         <div class="page-header__search">
           <svg
             width="16"

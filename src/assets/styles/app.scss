@@ -17,6 +17,8 @@
 // Теги по умолчанию
 @import "./global-tags";
 
+@import "../../../node_modules/swiper/swiper";
+
 @import "../../blocks/grid/grid";
 
 // Шапка
@@ -33,13 +35,13 @@
 
 // Навигация - Выпадающее меню
 
+@import "../../components/burger/burger";
+
 @import "../../blocks/main-nav/main-nav";
 
 @import "../../blocks/hero/hero";
 
 @import "../../blocks/collection/collection";
-
-@import "../../../node_modules/swiper/swiper";
 
 @import "../../blocks/compare-window/compare-window";
 

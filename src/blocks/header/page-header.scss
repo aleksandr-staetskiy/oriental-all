@@ -50,4 +50,46 @@
     margin-left: 20px;
     border-left: 1px solid #C4E2F2;
   }
+
+  @media only screen and (max-width: 992px) {
+    &__location {
+      display: none;
+    }
+
+    &__search {
+      display: none;
+    }
+
+    &__phone {
+      margin-right: 15px;
+      & a {
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+    }
+
+    &__bottom {
+      padding-bottom: 10px;
+      background: #FFFFFF;
+      box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.08);
+    }
+
+    &__order-call {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 378px) {
+
+    &__phone {
+      & a {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
 }
+
+
+

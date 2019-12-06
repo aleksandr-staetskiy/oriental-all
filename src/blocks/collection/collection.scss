@@ -1,6 +1,7 @@
 .collection {
-  font-family: "Gilroy Bold";
+  font-family: "Gilroy Light";
   background: $colorBackground;
+  padding-bottom: 80px;
 
   &__heading {
     display: block;
@@ -12,47 +13,101 @@
   }
   &__card {
     position: relative;
-    height: 329px;
+    height: 318px;
     padding: 30px;
-    background: $white;
+    background-repeat: no-repeat;
 
-    &--blue {
-      background: #CEEFFF;
+    &--vita {
+      background: url("../../img/vita.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 80%;
     }
 
-    &--light {
-      background: #ECF0F6;
+    &--standart {
+      background:url("../../img/standart.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 80%;
     }
 
-    &--gray {
-      background: #E5E5E5;
+    &--space {
+      background:url("../../img/space.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 80%;
+    }
+
+    &--vario {
+      background:url("../../img/vario.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 80%;
+    }
+
+    &--deco {
+      background:url("../../img/deco.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 80%;
+    }
+
+    &--design {
+      background:url("../../img/design.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 80%;
     }
 
     &-name {
       color: $black;
       font-weight: 800;
-      margin-top: 190px;
+      margin-top: 210px;
       margin-bottom: 0;
       font-size: 20px;
     }
 
     &-product {
-      font-family: "Gilroy Light";
       font-weight: 300;
       font-size: 14px;
     }
 
-    &-img {
-      position: absolute;
-      right: 0;
-      width: 139px;
-      height: 188px;
-      object-fit: contain;
-    }
 
     &-info {
       display: flex;
       justify-content: space-between;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    &__heading {
+      font-size: 32px;
+      line-height: 39px;
+      padding: 60px;
+    }
+
+    &__card {
+      height: 260px;
+      padding: 15px;
+
+      &-name {
+        margin-top: 150px;
+      }
+
+      &-price {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+
+    &__card {
+      height: 208px;
+
+      &-name {
+        margin-top: 125px;
+      }
     }
   }
 }

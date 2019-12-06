@@ -25,7 +25,7 @@ module.exports = {
   },
   styles: {
     input: `src/assets/styles/app.scss`,
-    watch: [`src/assets/**/*.scss`, `src/blocks/**/*.scss`],
+    watch: [`src/assets/**/*.scss`, `src/blocks/**/*.scss`, `src/components/**/*.scss`],
     output: `build/css`
   },
   pages: {
@@ -47,7 +47,7 @@ module.exports = {
     output: `build/favicons`
   },
   img: {
-    input: `src/img/**/*.{jpg,png,jpeg,webp}`,
+    input: `src/img/**/*.{jpg,png,jpeg,webp,svg}`,
     output: `build/img/`
   },
   video: {
